@@ -1,6 +1,7 @@
-// class
-// class
-// class
+// CSC 134
+// M1HW1
+// Efrain Alvarado
+// 2/1/2025
 #include <iostream>
 
 using namespace std;
