@@ -8,14 +8,14 @@ using namespace std;
 
 int main() 
 
-/* Two of the main cast for this movie was Bruce Willis as Dr. Malcolm Crowe and
+/* Two of the main actors cast for this movie were Bruce Willis as Dr. Malcolm Crowe and
  Haley Joel Osment as Cole Sear. */
 
 {
   
 string mov;
 
-mov = "The Sixth Sense."; //It took 6 month to film this movie.
+mov = "The Sixth Sense."; //It took 6 months to film this movie.
 
 int budget = 40;
 int box_office = 676;
@@ -25,17 +25,17 @@ int days;
 double daily;
 
     cout << "One of my favorite movies is " << mov << endl;
-    cout << "The budget for this movie was " << budget << " millions." << endl;
-    cout << "The movie was release the year 1999." << endl;
-    cout << "At the box office they made an amazing amount" << endl;
-    cout << "of " << box_office << " millions. Impressive!" << endl;
-    cout << "Dr.Malcolm (Willis) was pay a total of " << willis << " millions." << endl;
-    cout << "That's about " << weekly << " a week for 6 month. Sweet!" << endl;
+    cout << "The budget for this movie was " << budget << " million dollars." << endl;
+    cout << "The movie was released in 1999." << endl;
+    cout << "At the box office they made an outstanding amount" << endl;
+    cout << "of " << box_office << " million. Impressive!" << endl;
+    cout << "Dr.Malcolm (Willis) was paid a total of " << willis << " million dollars." << endl;
+    cout << "That's about " << weekly << " a week for 6 months. Sweet!" << endl;
     cout << "My Favorite scene is when the Dr. realized what happened." << endl;
     cout << "Enter how many work days, to see pay per day: ";
     cin >> daily;
     days = weekly / daily;
-    cout << "And the total per day is " << days << " thousand." << endl;
+    cout << "And the total per day is " << days << " thousand dollars." << endl;
 
 
     return 0;
