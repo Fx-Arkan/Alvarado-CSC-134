@@ -1,7 +1,7 @@
 // CSC 134
 // M2T1
-// alvarado
-// 1/29/2025
+// Alvarado
+// 1/30/2025
 
 
 #include <iostream>
