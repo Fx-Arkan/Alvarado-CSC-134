@@ -26,7 +26,9 @@ int day =  weekly / 7;
     cout << "of " << box_office << " millions. Impressive!" << endl;
     cout << "Dr.Malcolm (Willis) was pay a total of " << willis << " millions." << endl;
     cout << "Thas about " << weekly << " a week for 6 month. Sweet!" << endl;
+
     cout << "Now, divide that per day " << day << endl;
+    
     cout << "My Favorite scene is when the Dr. realized what happened" << endl;
 
     return 0;
