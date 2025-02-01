@@ -30,15 +30,12 @@ double daily;
     cout << "of " << box_office << " millions. Impressive!" << endl;
     cout << "Dr.Malcolm (Willis) was pay a total of " << willis << " millions." << endl;
     cout << "That's about " << weekly << " a week for 6 month. Sweet!" << endl;
-
-
-    cout << "Enter a work day amount per week to see per day: ";
+    cout << "My Favorite scene is when the Dr. realized what happened." << endl;
+    cout << "Enter how many work days, to see pay per day: ";
     cin >> daily;
     days = weekly / daily;
-    cout << " pay " << days << " yes" << endl;
+    cout << "And the total per day is " << days << " thousand." << endl;
 
-
-    cout << "My Favorite scene is when the Dr. realized what happened" << endl;
 
     return 0;
 }
