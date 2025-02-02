@@ -17,11 +17,11 @@ string mov;
 
 mov = "The Sixth Sense."; //It took 6 months to film this movie.
 
-int budget = 40;
-int box_office = 676;
-int willis = 14;
-int weekly = 14000000 / 26;
-int days;
+double budget = 40;
+double box_office = 675.8;
+double willis = 14;
+double weekly = 14000000 / 26;
+double days;
 double daily;
 
     cout << "One of my favorite movies is " << mov << endl;
@@ -32,6 +32,7 @@ double daily;
     cout << "Dr.Malcolm (Willis) was paid a total of " << willis << " million dollars." << endl;
     cout << "That's about " << weekly << " a week for 6 months. Sweet!" << endl;
     cout << "My Favorite scene is when the Dr. realized what happened." << endl;
+    cout << "Movie quote by little Cole \"I see dead people.\" Scary! " << endl;
     cout << "Enter how many work days, to see pay per day: ";
     cin >> daily;
     days = weekly / daily;
