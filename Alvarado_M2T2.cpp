@@ -31,7 +31,7 @@ int main()
   cout << "Sorry, but also your age is added to the price." << endl;
   double balance = age * total;
   cout << "your adjusted balance now is: $" <<  balance << endl;
-  cout << "Thank You for shopping with us, please come again." << endl;
+  cout << "Thank You for shopping with us," << name << ". please come again." << endl;
   
   return 0;
 
