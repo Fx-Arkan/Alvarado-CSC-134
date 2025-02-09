@@ -1,7 +1,7 @@
 // CSC 134
 // M2T2
 // Efrain Alvarado
-2/9/2025
+// 2/9/2025
 
 #include <iostream>
 
