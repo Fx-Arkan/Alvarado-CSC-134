@@ -4,18 +4,21 @@
 // 2/9/2025
 
 #include <iostream>
-
+#include <string>
 #include <iomanip>
 
 using namespace std;
 
 int main() 
 {
-  
+  string name;
   double each = 0.50 + 0.02;
   double costumer; 
+  cout << "Hi, Welcome to Alvarado's Apple Store" << endl;
+  cout << "My name is Mr. E. What is your name? " << endl;
+  cin >> name;
   cout << "Price of apples today is 0.50 cents each." << endl;
-  cout << "How many apples are you purchasing today?  ";
+  cout << "How many apples are you purchasing today dear " << name << "?" << endl;
   cin >> costumer;
   double total = costumer * each;
 
