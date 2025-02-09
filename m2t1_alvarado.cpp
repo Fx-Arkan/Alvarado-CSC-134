@@ -1,20 +1,21 @@
 // CSC 134
 // M2T1
-// Alvarado
-// 1/30/2025
+// Efrain Alvarado
+// 2/9/2025
 
 
 #include <iostream>
-#include <string>
 
 using namespace std;
 
 int main()
 {
-    
-    string name = "Alvarado";
-    int num_apples = 10;
-    double price_each = 0.25;
+    // variables are like mailboxes
+    string name = "Alvarado";      // my name!
+    int num_apples = 10;           // int are like whole numbers, so 3, or 1000000, but not 3.5
+    double price_each = 0.25;      // double stands for floating point. 
+                                   // double are like numbers like 3.5 on 11.002
+                                   
                      
     cout << "Welcome to the " << name << " apple farm!" << endl;
     cout << "We have " << num_apples << " in stock" << endl;
