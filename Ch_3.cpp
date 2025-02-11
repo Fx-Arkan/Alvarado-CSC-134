@@ -6,8 +6,13 @@ using namespace std;
 int main ()
 {
 
-string name
+string name;
 
+cout << " hi " << name << endl;
+cin >> name;
+cout << "good" << endl;
+
+return 0;
 
 
 }
