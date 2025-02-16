@@ -1,3 +1,9 @@
+// CSC 134
+// M2LAB2
+// Efrain Alvarado
+// 2/15/2025
+
+
 #include <iostream>
 using namespace std;
 
