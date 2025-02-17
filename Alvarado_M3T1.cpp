@@ -1,7 +1,7 @@
 // M3T1
-// class
-// Alvarado 
-// date
+// CSC-134
+// Efrain Alvarado 
+// 2/17/2025
 
 
 #include <iostream>
@@ -10,16 +10,33 @@
 using namespace std;
 int main()
 {
-double user, width1, width2, length1, length2, area1, area2;
-area1 = length1 * width1;
-area2 = length2 * width2;
 
-cout << " user, Length please";
+double width1, width2, length1, length2;
+// I'm keeping it simple and just going straight to the task.
+// Also trying to implement/practice my comments.
+cout << "Hi, Rectangle-1 length please: ";
 cin >> length1;
-cout << " next width";
+cout << "next, the width please: ";
 cin >> width1;
-cout << area1 << endl;
-cout << "anything else?" << endl;
+cout << "your length is: " << length1 << endl;
+cout << "and your width is: " << width1 << endl;
+double area1 = length1 * width1;
+cout << "so, the rectangle-1 area is: " << area1 << endl;
+
+// Next is the measurement of the second rectangle.
+
+cout << "Now, Rectangle-2 length please: ";
+cin >> length2;
+cout << "next the width please: ";
+cin >> width2;
+cout << "you length is: " << length2 << endl;
+cout << "and your width is: " << width2 << endl;
+double area2 = length2 * width2;
+cout << "Rectangle-2 area is: " << area2 << endl;
+
+cout << "Rectangle-1 area is: " << area1 << " and Rectangle-2 area is: " << area2 << endl;
+
+cout << "Thank you and have a Great Day!" << endl;
 
 return 0;
 
