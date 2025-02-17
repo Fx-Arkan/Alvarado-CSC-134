@@ -19,6 +19,7 @@ cin >> length1;
 cout << " next width";
 cin >> width1;
 cout << area1 << endl;
+cout << "anything else?" << endl;
 
 return 0;
 
