@@ -42,11 +42,11 @@ cout << "which one is larger, r1 or r2? " << endl;
 cin >> Correct;
 if (area1 > area2)
 {
-    cout << "r1 is the correct answer" << endl;
+    cout << "r1 is the correct answer." << endl;
 }
 else if (area1 < area2)
 {
-    cout << "r2 is the correct answer" << endl;
+    cout << "r2 is the correct answer." << endl;
 }
 
 cout << "well done!" << endl;
