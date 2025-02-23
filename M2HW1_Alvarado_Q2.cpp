@@ -1,3 +1,10 @@
+/*
+CSC 134
+M2HW1 - Bronze
+Efrain Alvarado
+2/23/2025
+*/
+// Question 2
 #include <iostream>
 #include <iomanip>
 using namespace std;
