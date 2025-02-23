@@ -19,7 +19,8 @@ int main()
  
 string firstname, lastname, acct;
 double checkingBalance = 1000.0;
-double savingsBalance = 5000.0;  
+double savingsBalance = 5000.0; 
+double bankBalance = 1802500.0;
 string accountType;
 int choice;
 
@@ -38,52 +39,95 @@ string correctPassword = lastname;
 string inputPassword;
 int attempts = 3;
 
-  while (attempts > 0){
+  while (attempts > 0)
+
+                      {
     cout << "Enter password: ";
     cin >> inputPassword;
 
-    if (inputPassword == correctPassword){
-        cout << "Access granted!" << endl;{ 
-          cout << "Choose account type (1 for savings, 2 for checking): ";
-          cin >> choice;
+    if (inputPassword == correctPassword)
 
-          if (choice == 1 || choice == 2){
+                                         {
+
+        cout << "Access granted!" << endl;
+
+                                          { 
+
+          cout << "Choose account type (1 for savings, 2 for checking, 3 for Bank lucky day): ";
+          cin >> choice;
+         
+          if (choice == 1 || choice == 2 || choice == 3)
+
+              {
+
               double selectedBalance = (choice == 1) ? savingsBalance : checkingBalance;
               cout << "Current balance: $" << selectedBalance << endl;
 
-              cout << "Do you want to (1) deposit or (2) withdraw?: ";
+              cout << "Do you want to (1) deposit or (2) withdraw or (3) give your money to the bank?: ";
               cin >> choice;
 
               double amount;
+              
               if (choice == 1) 
+
               {
+
                   cout << "Enter deposit amount: $";
                   cin >> amount;
                   selectedBalance += amount;
                   cout << "Deposit successful!" << endl;
-              } else if (choice == 2) 
+
+              }  
+
+                else if (choice == 2) 
+
               {
                   cout << "Enter withdrawal amount: $";
                   cin >> amount;
-                  if (amount <= selectedBalance) {
+                  if (amount <= selectedBalance) 
+
+                  {
                       selectedBalance -= amount;
                       cout << "Withdrawal successful!" << endl;
-                  } else {
-                      cout << "Insufficient funds. Oh, yeah, we have been using it!" << endl;
                   }
-              } else {
-                  cout << "Invalid choice, we are Keeping you money." << endl;
+
+                    else
+
+                  {
+                      cout << "Insufficient funds.the bank have your money." << endl;
+                  }
+              }
+               
+                else if (choice == 3)
+              {
+
+                  cout << " Bank lucky day and keeps all your money." << endl;
+              }
+
+                else
+              {
+                  cout << "Invalid choice,the bank keeps your money." << endl;
               }
 
               cout << "New balance: $" << selectedBalance << endl;
 
-              if (choice == 1) {
+              if (choice == 1)
+
+               {
                   savingsBalance = selectedBalance;
-              } else {
+              }
+
+               else
+
+                {
                   checkingBalance = selectedBalance;
               }
-          } else {
-              cout << "Invalid account type, is our acct now." << endl;
+          } 
+            
+            else 
+            
+            {
+              cout << "Invalid account type,the bank keeps your money." << endl;
           }
 
           return 0;
@@ -99,13 +143,16 @@ int attempts = 3;
 
 
         return 0;
-    } else {
+    }
+      else
+
+       {
         attempts--;
         cout << "Incorrect password. You have " << attempts << " attempts left." << endl;
     }
 }
 
-cout << "You have been logged out, and your money now is ours." << endl;
+cout << "You have been logged out and your acct deleted." << endl;
 
 
   
