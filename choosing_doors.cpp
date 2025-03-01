@@ -24,10 +24,10 @@ int main()
   else { cout << "I'm sorry, that is not a valid choice." << endl; }
 
 
-  cout << "Thank you for playing!"; << endl;
-  cout << "Press Enter to continue..." << endl;
-  cin.get();
-
+  cout << "Thank you for playing!" << endl;
+  
+  system("pause");
+ 
   return 0; 
 
 
