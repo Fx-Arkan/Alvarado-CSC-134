@@ -26,8 +26,13 @@ int main()
 
   cout << "Thank you for playing!" << endl;
   
-  system("pause");
- 
+  system("pause"); /* system function used for pause here, 
+  I noticed in the small amount I read about 'system' that it is a very important function 
+  and if not handled properly it creates a security vulnerability. */ 
+  /* The reason why I'm using the function "system" is because at the end of a program,
+  it goes so fast you don't get a chance to read what it says at the end before it closes the program*/
+   
+
   return 0; 
 
 
