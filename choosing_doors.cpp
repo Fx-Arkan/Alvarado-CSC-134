@@ -28,7 +28,7 @@ int main() {
 
 } 
 
-void chooseDoor1() {
+ void chooseDoor1() {
  
   cout << "You chose Door 1" << endl;
   cout << "You win ... A NEW CAR!" << endl;
