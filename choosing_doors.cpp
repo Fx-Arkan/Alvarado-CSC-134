@@ -24,8 +24,8 @@ int main()
   else { cout << "I'm sorry, that is not a valid choice." << endl; }
 
 
-  cout << "Thank you for playing!" << endl;
-  cout << "Press Enter to continue...";
+  cout << "Thank you for playing!"; << endl;
+  cout << "Press Enter to continue..." << endl;
   cin.get();
 
   return 0; 
