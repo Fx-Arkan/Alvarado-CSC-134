@@ -8,26 +8,26 @@
 #include <string>
 using namespace std;
 
-void chooseDoor1();
-void chooseDoor2();
-void chooseDoor3();
+void chooseBox1();// these are define later
+void chooseBox2();// these are define later
+void chooseBox3();// these are define later
 
 int main() 
 
 {
   
   int choice; 
-  cout << "Do you choose Door 1, Door 2 or Door 3?" << endl;
+  cout << "Do you choose Box 1, Box 2 or Box 3?" << endl;
   cout << "Type 1, 2 or 3: "; 
   cin >> choice;
 
 
-  if (1 == choice) { chooseDoor1(); }
+  if (1 == choice) { chooseBox1(); }
 
 
- else if (2 == choice) { chooseDoor2(); }
+ else if (2 == choice) { chooseBox2(); }
 
- else if (3 == choice) { chooseDoor3(); }
+ else if (3 == choice) { chooseBox3(); }
 
  else { cout << "I'm sorry, that is not a valid choice." << endl; }
 
@@ -36,7 +36,7 @@ int main()
   
   system("pause"); /* system function used for pause here, 
   I noticed in the small amount I read about 'system' that it is a very important function 
-  and if not handled properly it creates a security vulnerability. */ 
+  and if not handled properly it can creates a security vulnerability. */ 
   /* The reason why I'm using the function 'system' is because at the end of a program,
   it goes so fast you don't get a chance to read what it says at the end before it closes the program*/
    
@@ -46,14 +46,14 @@ int main()
 
 } 
 
- void chooseDoor1() 
+ void chooseBox1() 
  {
-  cout << "You chose Door 1" << endl;
+  cout << "You chose Box 1" << endl;
   cout << "You win ... A NEW CAR!" << endl;
  }
 
 
-void chooseDoor2() 
+void chooseBox2() 
  {
   int hour;
   string suffix;
@@ -80,37 +80,47 @@ void chooseDoor2()
 
  }
 
- void chooseDoor3() {
+ void chooseBox3() {
     static int repeatCounter = 0;  // Static variable to keep track of repeats
     //The 'static' and using 'repeatCounter' retains its value 
     // between multiple calls for 'chooseDoor3' function. This allows me to count 
     // how many times selecting 3 has been repeated.
 
     int choice;
-    while (true) {
-        cout << "Try again, Door 1, Door 2, or Door 3?" << endl;
+    while (true)// this will continue the loop as long it keeps getting the same selection,
+                // staying true to the condition I set it to.
+      {
+        cout << "Try again, Box 1, Box 2, or Box 3?" << endl;
         cout << "Type 1, 2, or 3: "; 
         cin >> choice;
 
-        if (1 == choice) {
-            chooseDoor1();
+        if (1 == choice) 
+        {
+            chooseBox1();
             repeatCounter = 0;  // Reset counter
             break;
-        } else if (2 == choice) {
-            chooseDoor2();
+        }
+        else if (2 == choice) 
+        {
+            chooseBox2();
             repeatCounter = 0;  // Reset counter
             break;
-        } else if (3 == choice) {
+        } 
+        else if (3 == choice) 
+        {
             repeatCounter++;        //3rd count
             if (repeatCounter > 3) 
-            {  
+        {  
                 cout << "Really?" << endl;
-            } 
-            else if (repeatCounter > 1)
-            {
+         } 
+         else if (repeatCounter > 1)
+         {
                 cout << "Can you make another selection? I can do this all day!" << endl;
-            }
-        } else {
+         }
+          
+        }
+        else 
+        {
             cout << "I'm sorry, that is not a valid choice." << endl;
             repeatCounter = 0;  // Reset counter
         }
