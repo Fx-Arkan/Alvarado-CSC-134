@@ -95,10 +95,13 @@ void chooseDoor2()
             repeatCounter = 0;  // Reset counter
             break;
         } else if (3 == choice) {
-            repeatCounter++;
-            if (repeatCounter > 3) {
+            repeatCounter++;        //3rd count
+            if (repeatCounter > 3) 
+            {  
                 cout << "Really?" << endl;
-            } else {
+            } 
+            else if (repeatCounter > 1)
+            {
                 cout << "Can you make another selection? I can do this all day!" << endl;
             }
         } else {
