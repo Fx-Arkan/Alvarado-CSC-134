@@ -76,6 +76,9 @@ void chooseDoor2()
 
  void chooseDoor3() {
     static int repeatCounter = 0;  // Static variable to keep track of repeats
+    //The 'static' and using 'repeatCounter' retains its value 
+    // between multiple calls for 'chooseDoor3' function. This allows me to count 
+    // how many times selecting 3 has been repeated.
 
     int choice;
     while (true) {
