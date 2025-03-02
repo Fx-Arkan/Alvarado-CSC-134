@@ -74,26 +74,32 @@ void chooseDoor2()
 
  }
 
- void chooseDoor3()
-
+ void chooseDoor3() 
  {
-  
+  static int repeatCounter = 0;  // Static variable to keep track of repeats
+
   int choice;
-   
-  cout << "Try again, Door 1, Door 2 or Door 3?" << endl;
-  cout << "Type 1, 2 or 3: "; 
+  cout << "Try again, Door 1, Door 2, or Door 3?" << endl;
+  cout << "Type 1, 2, or 3: "; 
   cin >> choice;
 
-
-  if (1 == choice) { chooseDoor1(); }
-
-
- else if (2 == choice) { chooseDoor2(); }
-
- else if (3 == choice) { chooseDoor3(); }
-      
-  
-}  
- 
+  if (1 == choice) {
+      chooseDoor1();
+      repeatCounter = 0;  // Reset counter
+  } else if (2 == choice) {
+      chooseDoor2();
+      repeatCounter = 0;  // Reset counter
+  } else if (3 == choice) {
+      repeatCounter++;
+      if (repeatCounter > 3) {
+          cout << "Can you make another selection? I can do this all day!" << endl;
+      } else {
+          chooseDoor3();
+      }
+  } else {
+      cout << "I'm sorry, that is not a valid choice." << endl;
+      repeatCounter = 0;  // Reset counter
+  }
+ }
 
  
