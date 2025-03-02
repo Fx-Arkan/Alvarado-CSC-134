@@ -75,10 +75,11 @@ void chooseDoor2()
  }
 
  void chooseDoor3()
- 
+
  {
   
-  int choice; 
+  int choice;
+   
   cout << "Try again, Door 1, Door 2 or Door 3?" << endl;
   cout << "Type 1, 2 or 3: "; 
   cin >> choice;
@@ -90,5 +91,9 @@ void chooseDoor2()
  else if (2 == choice) { chooseDoor2(); }
 
  else if (3 == choice) { chooseDoor3(); }
+      
+  
+}  
+ 
 
- }
+ 
