@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 void chooseDoor1();
@@ -10,8 +11,6 @@ int main()
 {
   
   int choice; 
-
- 
   cout << "Do you choose Door 1, Door 2 or Door 3?" << endl;
   cout << "Type 1, 2 or 3: "; 
   cin >> choice;
@@ -50,14 +49,50 @@ int main()
 
 void chooseDoor2() 
  {
-  cout << "You chose Door 2" << endl;
-  cout << "You win ... a bottle of floor wax." << endl;
+  int hour;
+  string suffix;
+  string time = "evening";
+  cout << "Type a number between 1 and 12" << endl;
+  cin >> hour;
+  cout << "is it am or pm? "
+  cin >> suffix;
+    
+  { 
+  if (suffix == "pm")
+     { if ( hour < 6 )
+        { time = "afternoon"; }
+     }
+     
+     else 
+
+    { time = "morning"; }
+    }
+
+  
+   cout << "good " << time << endl;
+  
+
  }
 
  void chooseDoor3()
  
- { 
-  cout << "Again, choose Door 1, Door 2 or Door 3?" << endl;
+ {
+  
+  int choice; 
+  cout << "Try again, Door 1, Door 2 or Door 3?" << endl;
   cout << "Type 1, 2 or 3: "; 
   cin >> choice;
+
+
+  if (1 == choice) { chooseDoor1(); }
+
+
+ else if (2 == choice) { chooseDoor2(); }
+
+ else if (3 == choice) { chooseDoor3(); }
+
+ else { cout << "I'm sorry, that is not a valid choice." << endl; }
+
+
+  cout << "Thank you for playing!" << endl;
  }
