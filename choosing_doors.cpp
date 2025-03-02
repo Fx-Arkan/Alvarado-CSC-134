@@ -91,8 +91,4 @@ void chooseDoor2()
 
  else if (3 == choice) { chooseDoor3(); }
 
- else { cout << "I'm sorry, that is not a valid choice." << endl; }
-
-
-  cout << "Thank you for playing!" << endl;
  }
