@@ -16,12 +16,14 @@ int main()
 
 {
   
-  int choice; 
-  cout << "Do you choose Box 1, Box 2 or Box 3?" << endl;
+  int choice; // initiating choice
+
+  cout << "Welcome to the Box Game with your host Mr.E ." << endl; // Intro to game
+  cout << "Lets begin, please choose Box 1, Box 2 or Box 3?" << endl; // game rules
   cout << "Type 1, 2 or 3: "; 
-  cin >> choice;
+  cin >> choice; // defining choice depending on input
 
-
+// from here down, results and display depending on selection
   if (1 == choice) { chooseBox1(); }
 
 
@@ -45,7 +47,7 @@ int main()
 
 
 } 
-
+//intresting- void define separate from main.
  void chooseBox1() 
  {
   cout << "You chose Box 1" << endl;
