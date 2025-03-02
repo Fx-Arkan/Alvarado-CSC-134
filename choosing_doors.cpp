@@ -51,21 +51,21 @@ void chooseDoor2()
  {
   int hour;
   string suffix;
-  string time = "evening";
+  string time = "evening my friend.";
   cout << "Type a number between 1 and 12" << endl;
   cin >> hour;
-  cout << "is it am or pm? "
+  cout << "is it am or pm? " << endl;
   cin >> suffix;
     
   { 
   if (suffix == "pm")
      { if ( hour < 6 )
-        { time = "afternoon"; }
+        { time = "afternoon my friend."; }
      }
      
      else 
 
-    { time = "morning"; }
+    { time = "morning my friend."; }
     }
 
   
