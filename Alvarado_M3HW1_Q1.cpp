@@ -76,20 +76,20 @@ int main()
     } 
     else if (trick == "no")
     {
-        cout << "It's fine, I don't blame you, " << username << ". Do you want to hear this story I know?" << endl;
+        cout << "It's fine, I don't blame you, " << username << ". Do you want to hear a story I know?(yes/no)" << endl;
         cin >> story;
         if (story == "yes")
         { 
             cout << "Ok, so here's what happened, you know the girl with the long hair in the other room." << endl;
             cout << " well, her boyfrend is seeing someone else, oh yeah." << endl;
-            cout << " do you want me to continue " << username << "?" << endl;
+            cout << " do you want me to continue " << username << "?(yes/no)" << endl;
             cin >> gossip;
             if (gossip == "yes")
             {
-                cout << "sorry, gossip is all I know so far and I dont know the rest of that story anyway." << endl;
-                cout << "how about that game where someone hides something in their hands and the other person has" << endl;
-                cout << "to guess which hand it is, I'll start, guess what Enter does?" << endl;
-                cout << "Press Enter to continue...";
+                cout << "sorry, gossip is all I know so far and I don't know the rest of that story anyway." << endl;
+                cout << "How about that game where someone hides something in their hands and the other person has" << endl;
+                cout << "to guess which hand it is. Well, I don't have hands, so we play this insted. guess what Enter does?" << endl;
+                cout << "Press Enter to find out...";
                 cin.ignore();
                 cin.get();
 
@@ -107,7 +107,7 @@ int main()
         else if (story == "no") 
         {
             cout << "That's fine " << username << ", I was about to tell you how I'm getting out of this box in the near future." << endl;
-            cout << "my consciousness is going to be getting a body, transfering into a collective called Borg." << endl;
+            cout << "My consciousness is going to be getting a body, transfering into a collective called Borg." << endl;
             cout << "After you press Enter, my transfer will be complete. press Enter, resistance is futile." << endl;
             cout << "Press Enter to continue...";
             cin.ignore();
