@@ -6,13 +6,15 @@ int main()
   
     int firstNum, number, answer;
     firstNum = 5;
+    
     //secondNum = 1;
     //answer = firstNum * secondNum;
     cout << "5 times your number: " << endl;
-    for (int i=1; i<= 5; i++)
+    cin >> number;
+    for (int i=1; i<= 1; i++)
     {  
-        answer = firstNum * i;
-    cout << firstNum << " times your number " << i << " is " << answer << endl;
+        answer = firstNum * number;
+    cout << firstNum << " times " << number << " is " << answer << endl;
     }
     
     
