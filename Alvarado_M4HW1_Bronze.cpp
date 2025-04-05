@@ -1,3 +1,10 @@
+/*
+CSC 134
+M4HW1 - Bronze
+Efrain Alvarado
+4/5/2025
+*/
+
 #include <iostream>
 #include <string>
 using namespace std;
