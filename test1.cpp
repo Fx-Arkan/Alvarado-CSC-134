@@ -10,11 +10,12 @@ int main()
     //secondNum = 1;
     //answer = firstNum * secondNum;
   
-  for (int i=1; i<= 10; i++)
+  int i=1;
+  while (i <= 10)
    {    
     answer = firstNum * i;
     cout << firstNum << " times " << i << " is " << answer << endl;
-    
+    i++;
    }
 
    cout << "Enter a number to multiply by 5: ";
