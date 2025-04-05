@@ -9,7 +9,7 @@ int main()
     
     //secondNum = 1;
     //answer = firstNum * secondNum;
-    cout << "5 times your number: " << endl;
+    cout << "5 times your number: ";
     cin >> number;
     for (int i=1; i<= 1; i++)
     {  
