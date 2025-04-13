@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
 
-double z = pow(2, 3);
+double z = pow(10, 3);
 cout << z << endl;
 
 
