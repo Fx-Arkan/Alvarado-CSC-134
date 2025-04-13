@@ -3,10 +3,10 @@
 using namespace std;
 
 double cube_volume(double side_length)
- {
-    return side_length * side_length * side_length; // Formula for cube volume
- }
-
+{
+   double volume = side_length * side_length * side_length;
+   return volume;
+}
 int main()
 {
 
