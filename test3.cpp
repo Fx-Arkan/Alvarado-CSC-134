@@ -11,7 +11,7 @@ int main()
 {
 
 
-    double result1 = cube_volume(2);
+    double result1 = cube_volume(4);
     double result2 = cube_volume(10);
     cout << "A cube with side length 2 has volume " << result1 << endl;
     cout << "A cube with side length 10 has volume " << result2 << endl;
